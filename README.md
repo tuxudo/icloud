@@ -46,3 +46,6 @@ Table Schema
 * siri_enabled - BOOLEAN - Siri enabled
 * imessage_syncing_enabled - BOOLEAN - Messages in iCloud enabled
 * imessage_currently_syncing - BOOLEAN - Messages in iCloud currently syncing
+* home_enabled - BOOLEAN - If Homes are in iCloud
+* news_enabled - BOOLEAN - If News is synced with iCloud
+* stocks_enabled - BOOLEAN - Stocks stored in iCloud

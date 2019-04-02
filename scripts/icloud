@@ -73,8 +73,8 @@ def process_prefs(prefs):
                         preffile[service['Name'].lower()+'_enabled'] = 0
                         # Show default of Siri enabled, if OS version is greater than 12
                         # Because the Siri settings are stubborn
-                        if getOsVersion() > 12 and "SIRI" in service['Name']:
-                            preffile[service['Name'].lower()+'_enabled'] = 1
+#                        if getOsVersion() > 12 and "SIRI" in service['Name']:
+#                            preffile[service['Name'].lower()+'_enabled'] = 1
                         for serviceitem in service:
                             if "FAMILY" not in service['Name'] and "BACK_TO_MY_MAC" not in service['Name'] and serviceitem == 'Enabled' and to_bool(service[serviceitem]) == 1:
                                 preffile[service['Name'].lower()+'_enabled'] = 1
@@ -107,12 +107,6 @@ def process_prefs(prefs):
             out.append(preffile)
     return out
 
-def to_bool(s):
-    if s == True:
-        return 1
-    else:
-        return 0
-    
 def get_extra_prefs(pref):
 
     preffile = {}
@@ -169,9 +163,24 @@ def get_extra_prefs(pref):
                 preffile['imessage_syncing_enabled'] = pl[item]
             elif item == 'CloudKitIsSyncing':
                 preffile['imessage_currently_syncing'] = pl[item]
-    
+                
+    # Get Siri settings, if OS version is greater than 10.12
+    if getOsVersion() > 12:
+        siripath = pref.replace("MobileMeAccounts.plist", "com.apple.assistant.backedup.plist")
+        if os.path.isfile(siripath):
+            pl = FoundationPlist.readPlist(siripath)
+            preffile['siri_enabled'] = 0
+            if item == 'Cloud Sync Enabled':
+                preffile['siri_enabled'] = pl[item]
+                
     return preffile
-    
+
+def to_bool(s):
+    if s == True:
+        return 1
+    else:
+        return 0
+
 def getOsVersion():
     """Returns the minor OS version."""
     os_version_tuple = platform.mac_ver()[0].split('.')
@@ -195,10 +204,14 @@ def main():
             print 'Manual check: skipping'
             exit(0)
 
+    # Set the encoding
+    reload(sys)  
+    sys.setdefaultencoding('utf8')
+
     # Get information about iCloud accounts
     prefs = get_prefs()
     result = process_prefs(prefs)
-    
+
     # Write iCloud results to cache
     output_plist = os.path.join(cachedir, 'icloud.plist')
     FoundationPlist.writePlist(result, output_plist)
