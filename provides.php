@@ -8,7 +8,6 @@ return array(
         'icloud' => array('view' => 'icloud_listing', 'i18n' => 'icloud.icloud'),
     ),
     'widgets' => array(
-        'icloud_back_to_my_mac' => array('view' => 'icloud_back_to_my_mac_widget', 'i18n' => 'icloud.back_to_my_mac_enabled'),
         'icloud_bookmarks' => array('view' => 'icloud_bookmarks_widget', 'i18n' => 'icloud.bookmarks_widget'),
         'icloud_calendar' => array('view' => 'icloud_calendar_widget', 'i18n' => 'icloud.calendar_widget'),
         'icloud_cloud_photo' => array('view' => 'icloud_cloud_photo_widget', 'i18n' => 'icloud.cloud_photo_enabled'),

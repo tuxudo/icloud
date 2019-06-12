@@ -9,7 +9,6 @@
   <div class="row">
       <?php $widget->view($this, 'icloud_logged_in'); ?>
       <?php $widget->view($this, 'icloud_find_my_mac'); ?>
-      <?php $widget->view($this, 'icloud_back_to_my_mac'); ?>
   </div> <!-- /row -->
 
   <div class="row">

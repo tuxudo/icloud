@@ -37,7 +37,6 @@ new Icloud_model;
 		        <th data-i18n="icloud.imessage_syncing_enabled" data-colname='icloud.imessage_syncing_enabled'></th>
 		        <th data-i18n="icloud.keychain_sync_enabled" data-colname='icloud.keychain_sync_enabled'></th>
 		        <th data-i18n="icloud.find_my_mac_enabled" data-colname='icloud.find_my_mac_enabled'></th>
-		        <th data-i18n="icloud.back_to_my_mac_enabled" data-colname='icloud.back_to_my_mac_enabled'></th>
 		        <th data-i18n="icloud.home_enabled" data-colname='icloud.home_enabled'></th>
 		        <th data-i18n="icloud.stocks_enabled" data-colname='icloud.stocks_enabled'></th>
 		        <th data-i18n="icloud.news_enabled" data-colname='icloud.news_enabled'></th>
@@ -50,7 +49,7 @@ new Icloud_model;
 		    </thead>
 		    <tbody>
 		    	<tr>
-					<td data-i18n="listing.loading" colspan="30" class="dataTables_empty"></td>
+					<td data-i18n="listing.loading" colspan="29" class="dataTables_empty"></td>
 				</tr>
 		    </tbody>
 		  </table>
@@ -214,53 +213,47 @@ new Icloud_model;
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('disabled')+'</span>' : '')
                 $('td:eq(20)', nRow).html(status)
                 
-                // back_to_my_mac_enabled
+                // home_enabled
                 var status=$('td:eq(21)', nRow).html();
                 status = status == 1 ? '<span class="label label-danger">'+i18n.t('enabled')+'</span>' :
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('disabled')+'</span>' : '')
                 $('td:eq(21)', nRow).html(status)
                 
-                // home_enabled
+                // stocks_enabled
                 var status=$('td:eq(22)', nRow).html();
                 status = status == 1 ? '<span class="label label-danger">'+i18n.t('enabled')+'</span>' :
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('disabled')+'</span>' : '')
                 $('td:eq(22)', nRow).html(status)
                 
-                // stocks_enabled
+                // news_enabled
                 var status=$('td:eq(23)', nRow).html();
                 status = status == 1 ? '<span class="label label-danger">'+i18n.t('enabled')+'</span>' :
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('disabled')+'</span>' : '')
                 $('td:eq(23)', nRow).html(status)
                 
-                // news_enabled
+                // find_my_mac_enabled
                 var status=$('td:eq(24)', nRow).html();
                 status = status == 1 ? '<span class="label label-danger">'+i18n.t('enabled')+'</span>' :
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('disabled')+'</span>' : '')
                 $('td:eq(24)', nRow).html(status)
                 
-                // find_my_mac_enabled
+                // beta
                 var status=$('td:eq(25)', nRow).html();
-                status = status == 1 ? '<span class="label label-danger">'+i18n.t('enabled')+'</span>' :
-                (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('disabled')+'</span>' : '')
+                status = status == 1 ? '<span class="label label-danger">'+i18n.t('yes')+'</span>' :
+                (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('no')+'</span>' : '')
                 $('td:eq(25)', nRow).html(status)
                 
-                // beta
+                // is_managed_apple_id
                 var status=$('td:eq(26)', nRow).html();
                 status = status == 1 ? '<span class="label label-danger">'+i18n.t('yes')+'</span>' :
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('no')+'</span>' : '')
                 $('td:eq(26)', nRow).html(status)
                 
-                // is_managed_apple_id
-                var status=$('td:eq(27)', nRow).html();
-                status = status == 1 ? '<span class="label label-danger">'+i18n.t('yes')+'</span>' :
-                (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('no')+'</span>' : '')
-                $('td:eq(27)', nRow).html(status)
-                
                 // primary_email_verified
-                var status=$('td:eq(28)', nRow).html();
+                var status=$('td:eq(27)', nRow).html();
                 status = status == 1 ? '<span class="label label-success">'+i18n.t('yes')+'</span>' :
                 (status == 0 && status != '' ? '<span class="label label-danger">'+i18n.t('no')+'</span>' : '')
-                $('td:eq(28)', nRow).html(status)
+                $('td:eq(27)', nRow).html(status)
                 
             }
 	    } );
