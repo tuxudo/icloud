@@ -188,7 +188,12 @@ def getOsVersion():
 def getOsVersionLonger():
     """Returns the minor and point OS version."""
     os_version_tuple = platform.mac_ver()[0].split('.')
-    return int(os_version_tuple[1]+os_version_tuple[2])
+    try:
+        os_ver = int(os_version_tuple[1]+os_version_tuple[2])
+    except:
+        os_ver = int(os_version_tuple[1]+"0")
+
+    return os_ver
 
 def main():
     """Main"""
