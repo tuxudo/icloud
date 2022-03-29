@@ -73,16 +73,16 @@ def process_prefs(prefs):
                 elif item == 'Services':
                     for service in account[item]:
                         preffile[service['Name'].lower()+'_enabled'] = 0
-                        # Show default of Siri enabled, if OS version is greater than 12
+                        # Show default of Siri enabled, if Darwin version is greater than 16 (Sierra)
                         # Because the Siri settings are stubborn
-#                        if getOsVersion() > 12 and "SIRI" in service['Name']:
+#                        if getOsVersion() > 16 and "SIRI" in service['Name']:
 #                            preffile[service['Name'].lower()+'_enabled'] = 1
                         for serviceitem in service:
                             if "FAMILY" not in service['Name'] and "BACK_TO_MY_MAC" not in service['Name'] and serviceitem == 'Enabled' and to_bool(service[serviceitem]) == 1:
                                 preffile[service['Name'].lower()+'_enabled'] = 1
+                                preffile.update(get_extra_prefs(pref))
                             if "FAMILY" not in service['Name'] and "BACK_TO_MY_MAC" in service['Name'] and serviceitem == 'Enabled' and to_bool(service[serviceitem]) == 1:
                                 preffile[service['Name'].lower()+'_enabled'] = 1  
-                                preffile.update(get_extra_prefs(pref))
                             elif serviceitem == 'status':
                                 preffile[service['Name'].lower()+'_status'] = service[serviceitem]
                             elif serviceitem == 'showManageFamily':
@@ -111,8 +111,8 @@ def get_extra_prefs(pref):
 
     preffile = {}
 
-    # Get iCloud Drive settings, if OS version is greater than 12
-    if getOsVersion() > 12:
+    # Get iCloud Drive settings, if Darwin version is greater than 16 (Sierra)
+    if getOsVersion() > 16:
         finderpath = pref.replace("MobileMeAccounts.plist", "com.apple.finder.plist")
         if os.path.isfile(finderpath):
             pl = FoundationPlist.readPlist(finderpath)
@@ -152,8 +152,9 @@ def get_extra_prefs(pref):
                     if prefitem == 'CPSPreferenceOnlyKeepThumbnailsKey':
                             preffile['cloud_photo_only_keep_thumbnail'] = to_bool(pl[item][prefitem])
                             
-    # Get iMessages in iCloud settings, if OS version is greater than 10.13.4, Messages in the Cloud was introduced with 10.13.5
-    if getOsVersionLonger() > 134:
+    # Get iMessages in iCloud settings, if OS version is greater than 10.13.4 (Darwin 1750)
+    # Messages in the Cloud was introduced with 10.13.5 (Darwin 17.6.0)
+    if getOsVersionLonger() > 1750:
         madridpath = pref.replace("MobileMeAccounts.plist", "com.apple.madrid.plist")
         if os.path.isfile(madridpath):
             pl = FoundationPlist.readPlist(madridpath)
@@ -164,8 +165,8 @@ def get_extra_prefs(pref):
             elif item == 'CloudKitIsSyncing':
                 preffile['imessage_currently_syncing'] = pl[item]
                 
-    # Get Siri settings, if OS version is greater than 10.12
-    if getOsVersion() > 12:
+    # Get Siri settings, if OS version is greater than 10.12 (Darwin 16)
+    if getOsVersion() > 16:
         siripath = pref.replace("MobileMeAccounts.plist", "com.apple.assistant.backedup.plist")
         if os.path.isfile(siripath):
             pl = FoundationPlist.readPlist(siripath)
@@ -182,19 +183,21 @@ def to_bool(s):
         return 0
 
 def getOsVersion():
-    """Returns the minor OS version."""
-    os_version_tuple = platform.mac_ver()[0].split('.')
-    return int(os_version_tuple[1])
+    """Returns the Darwin version."""
+    # Catalina -> 10.15.7 -> 19.6.0 -> 19
+    # os_version_tuple = platform.mac_ver()[0].split('.')
+    # return int(os_version_tuple[1])
+    darwin_version_tuple = platform.release().split('.')
+    return int(darwin_version_tuple[0])
 
 def getOsVersionLonger():
-    """Returns the minor and point OS version."""
-    os_version_tuple = platform.mac_ver()[0].split('.')
-    try:
-        os_ver = int(os_version_tuple[1]+os_version_tuple[2])
-    except:
-        os_ver = int(os_version_tuple[1]+"0")
+    """Returns the full Darwin version."""
+    # Catalina -> 10.15.7 -> 19.6.0 -> 1960
+    # os_version_tuple = platform.mac_ver()[0].split('.')
+    # return int(os_version_tuple[1])
+    darwin_version_tuple = platform.release().replace(".","")
+    return int(darwin_version_tuple)
 
-    return os_ver
 
 def main():
     """Main"""
