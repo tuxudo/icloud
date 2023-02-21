@@ -198,7 +198,6 @@ def getOsVersionLonger():
     darwin_version_tuple = platform.release().replace(".","")
     return int(darwin_version_tuple)
 
-
 def main():
     """Main"""
 
