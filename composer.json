@@ -1,1 +1,5 @@
-{"require":{"php":"^7.0"},"license":"MIT","name":"tuxudo/icloud","description":"iCloud module for munkireport."}
+{
+  "license":"MIT",
+  "name":"tuxudo/icloud",
+  "description":"iCloud module for munkireport."
+}
