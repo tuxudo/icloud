@@ -1,7 +1,7 @@
 <?php $this->view('partials/head', array(
-	"scripts" => array(
-		"clients/client_list.js"
-	)
+  "scripts" => array(
+    "clients/client_list.js"
+  )
 )); ?>
 
 <div class="container">

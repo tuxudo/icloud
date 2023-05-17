@@ -1,13 +1,12 @@
 <div class="col-lg-4 col-md-6">
-    <div class="panel panel-default" id="icloud_imessage_syncing-widget">
-        <div id="icloud_imessage_syncing-widget" class="panel-heading" data-container="body">
-            <h3 class="panel-title"><i class="fa fa-commenting-o"></i> 
-                <span data-i18n="icloud.imessage_syncing_enabled"></span>
-                <list-link data-url="/show/listing/icloud/icloud"></list-link>
-            </h3>
+    <div class="card" id="icloud_imessage_syncing-widget">
+        <div id="icloud_imessage_syncing-widget" class="card-heading" data-container="body">
+            <i class="fa fa-commenting-o"></i> 
+            <span data-i18n="icloud.imessage_syncing_enabled"></span>
+            <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>
         </div>
-        <div class="panel-body text-center"></div>
-    </div><!-- /panel -->
+        <div class="card-body text-center"></div>
+    </div><!-- /card -->
 </div><!-- /col -->
 
 <script>
@@ -19,7 +18,7 @@ $(document).on('appUpdate', function(e, lang) {
             return;
         }
 
-        var panel = $('#icloud_imessage_syncing-widget div.panel-body'),
+        var panel = $('#icloud_imessage_syncing-widget div.card-body'),
         baseUrl = appUrl + '/show/listing/icloud/icloud/';
         panel.empty();
         // Set blocks, disable if zero

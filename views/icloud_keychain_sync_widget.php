@@ -1,13 +1,12 @@
 <div class="col-lg-4 col-md-6">
-    <div class="panel panel-default" id="icloud_keychain_sync-widget">
-        <div id="icloud_keychain_sync-widget" class="panel-heading" data-container="body">
-            <h3 class="panel-title"><i class="fa fa-key"></i> 
-                <span data-i18n="icloud.keychain_sync_widget"></span>
-                <list-link data-url="/show/listing/icloud/icloud"></list-link>
-            </h3>
+    <div class="card" id="icloud_keychain_sync-widget">
+        <div id="icloud_keychain_sync-widget" class="card-heading" data-container="body">
+            <i class="fa fa-key"></i> 
+            <span data-i18n="icloud.keychain_sync_widget"></span>
+            <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>
         </div>
-        <div class="panel-body text-center"></div>
-    </div><!-- /panel -->
+        <div class="card-body text-center"></div>
+    </div><!-- /card -->
 </div><!-- /col -->
 
 <script>
@@ -19,7 +18,7 @@ $(document).on('appUpdate', function(e, lang) {
             return;
         }
 
-        var panel = $('#icloud_keychain_sync-widget div.panel-body'),
+        var panel = $('#icloud_keychain_sync-widget div.card-body'),
         baseUrl = appUrl + '/show/listing/icloud/icloud/';
         panel.empty();
         // Set blocks, disable if zero
