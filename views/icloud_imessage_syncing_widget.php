@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_imessage_syncing-widget">
-        <div id="icloud_imessage_syncing-widget" class="card-heading" data-container="body">
+        <div id="icloud_imessage_syncing-widget" class="card-header" data-container="body">
             <i class="fa fa-commenting-o"></i> 
             <span data-i18n="icloud.imessage_syncing_enabled"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

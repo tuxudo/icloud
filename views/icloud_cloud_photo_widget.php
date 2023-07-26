@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_cloud_photo-widget">
-        <div id="icloud_cloud_photo-widget" class="card-heading" data-container="body">
+        <div id="icloud_cloud_photo-widget" class="card-header" data-container="body">
             <i class="fa fa-picture-o"></i> 
             <span data-i18n="icloud.cloud_photo_enabled"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

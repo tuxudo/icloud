@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_clouddesktop_desktop-widget">
-        <div id="icloud_clouddesktop_desktop-widget" class="card-heading" data-container="body">
+        <div id="icloud_clouddesktop_desktop-widget" class="card-header" data-container="body">
             <i class="fa fa-desktop"></i> 
             <span data-i18n="icloud.clouddesktop_desktop_enabled"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

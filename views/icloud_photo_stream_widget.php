@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_photo_stream-widget">
-        <div id="icloud_photo_stream-widget" class="card-heading" data-container="body">
+        <div id="icloud_photo_stream-widget" class="card-header" data-container="body">
             <i class="fa fa-rss"></i> 
             <span data-i18n="icloud.photo_stream_enabled"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

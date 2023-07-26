@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_notes-widget">
-        <div id="icloud_notes-widget" class="card-heading" data-container="body">
+        <div id="icloud_notes-widget" class="card-header" data-container="body">
             <i class="fa fa-sticky-note-o"></i> 
             <span data-i18n="icloud.notes_widget"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_mail-widget">
-        <div id="icloud_mail-widget" class="card-heading" data-container="body">
+        <div id="icloud_mail-widget" class="card-header" data-container="body">
             <i class="fa fa-envelope-o"></i> 
             <span data-i18n="icloud.mail_widget"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

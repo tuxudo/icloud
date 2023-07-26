@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_find_my_mac-widget">
-        <div id="icloud_find_my_mac-widget" class="card-heading" data-container="body">
+        <div id="icloud_find_my_mac-widget" class="card-header" data-container="body">
             <i class="fa fa-map-marker"></i> 
             <span data-i18n="icloud.find_my_mac_icloud"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

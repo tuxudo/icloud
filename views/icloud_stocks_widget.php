@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_stocks-widget">
-        <div id="icloud_stocks-widget" class="card-heading" data-container="body">
+        <div id="icloud_stocks-widget" class="card-header" data-container="body">
             <i class="fa fa-line-chart"></i> 
             <span data-i18n="icloud.stocks_widget"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>

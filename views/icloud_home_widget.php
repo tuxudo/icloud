@@ -1,6 +1,6 @@
 <div class="col-lg-4 col-md-6">
     <div class="card" id="icloud_home-widget">
-        <div id="icloud_home-widget" class="card-heading" data-container="body">
+        <div id="icloud_home-widget" class="card-header" data-container="body">
             <i class="fa fa-home"></i> 
             <span data-i18n="icloud.home_widget"></span>
             <a href="/show/listing/icloud/icloud" class="pull-right"><i class="fa fa-list"></i></a>
