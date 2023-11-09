@@ -133,24 +133,27 @@ def get_extra_prefs(pref):
                 elif item == 'FXICloudDriveFirstSyncDownComplete':
                         preffile['clouddesktop_first_sync_down_complete'] = to_bool(pl[item])
 
-    # Get iCloud Photo Library settings
-    photospath = pref.replace("Preferences/MobileMeAccounts.plist", "Containers/com.apple.CloudPhotosConfiguration/Data/Library/Preferences/com.apple.CloudPhotosConfiguration.plist")
-    if os.path.isfile(photospath):
-        pl = FoundationPlist.readPlist(photospath)
-        preffile['cloud_photo_enabled'] = 0
-        preffile['photo_stream_enabled'] = 0
-        preffile['shared_streams_enabled'] = 0
-        for item in pl:            
-            if item == 'com.apple.photo.icloud.cloudphoto':
-                    preffile['cloud_photo_enabled'] = pl[item]
-            elif item == 'com.apple.photo.icloud.myphotostream':
-                    preffile['photo_stream_enabled'] = pl[item]
-            elif item == 'com.apple.photo.icloud.sharedstreams':
-                    preffile['shared_streams_enabled'] = pl[item]
-            elif item == 'service-preferences-com.apple.photo.icloud.cloudphoto':
-                for prefitem in pl[item]:
-                    if prefitem == 'CPSPreferenceOnlyKeepThumbnailsKey':
-                            preffile['cloud_photo_only_keep_thumbnail'] = to_bool(pl[item][prefitem])
+    # Try to get iCloud Photo Library settings
+    try:
+        photospath = pref.replace("Preferences/MobileMeAccounts.plist", "Containers/com.apple.CloudPhotosConfiguration/Data/Library/Preferences/com.apple.CloudPhotosConfiguration.plist")
+        if os.path.isfile(photospath):
+            pl = FoundationPlist.readPlist(photospath)
+            preffile['cloud_photo_enabled'] = 0
+            preffile['photo_stream_enabled'] = 0
+            preffile['shared_streams_enabled'] = 0
+            for item in pl:            
+                if item == 'com.apple.photo.icloud.cloudphoto':
+                        preffile['cloud_photo_enabled'] = pl[item]
+                elif item == 'com.apple.photo.icloud.myphotostream':
+                        preffile['photo_stream_enabled'] = pl[item]
+                elif item == 'com.apple.photo.icloud.sharedstreams':
+                        preffile['shared_streams_enabled'] = pl[item]
+                elif item == 'service-preferences-com.apple.photo.icloud.cloudphoto':
+                    for prefitem in pl[item]:
+                        if prefitem == 'CPSPreferenceOnlyKeepThumbnailsKey':
+                                preffile['cloud_photo_only_keep_thumbnail'] = to_bool(pl[item][prefitem])
+    except:
+        pass
                             
     # Get iMessages in iCloud settings, if OS version is greater than 10.13.4 (Darwin 1750)
     # Messages in the Cloud was introduced with 10.13.5 (Darwin 17.6.0)
