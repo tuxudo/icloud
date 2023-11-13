@@ -1,0 +1,13 @@
+type: button
+widget_id: icloud_imessage_syncing-widget
+api_url: /module/icloud/get_button_widget/imessage_syncing_enabled
+i18n_title: icloud.imessage_syncing_enabled
+icon: fa-commenting-o
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: enabled
+    class: btn-danger 
+  - label: no
+    i18n_label: disabled
+    class: btn-success

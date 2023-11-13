@@ -1,0 +1,13 @@
+type: button
+widget_id: icloud_contacts-widget
+api_url: /module/icloud/get_button_widget/contacts_enabled
+i18n_title: icloud.contacts_icloud
+icon: fa-address-book
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: enabled
+    class: btn-danger 
+  - label: no
+    i18n_label: disabled
+    class: btn-success

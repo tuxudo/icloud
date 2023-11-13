@@ -139,13 +139,13 @@ def get_extra_prefs(pref):
         if os.path.isfile(photospath):
             pl = FoundationPlist.readPlist(photospath)
             preffile['cloud_photo_enabled'] = 0
-            preffile['photo_stream_enabled'] = 0
+            # preffile['photo_stream_enabled'] = 0
             preffile['shared_streams_enabled'] = 0
             for item in pl:            
                 if item == 'com.apple.photo.icloud.cloudphoto':
                         preffile['cloud_photo_enabled'] = pl[item]
-                elif item == 'com.apple.photo.icloud.myphotostream':
-                        preffile['photo_stream_enabled'] = pl[item]
+                # elif item == 'com.apple.photo.icloud.myphotostream':
+                        # preffile['photo_stream_enabled'] = pl[item]
                 elif item == 'com.apple.photo.icloud.sharedstreams':
                         preffile['shared_streams_enabled'] = pl[item]
                 elif item == 'service-preferences-com.apple.photo.icloud.cloudphoto':

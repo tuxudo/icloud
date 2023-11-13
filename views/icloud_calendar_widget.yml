@@ -1,0 +1,13 @@
+type: button
+widget_id: icloud_calendar-widget
+api_url: /module/icloud/get_button_widget/calendar_enabled
+i18n_title: icloud.calendar_widget
+icon: fa-calendar
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: enabled
+    class: btn-danger 
+  - label: no
+    i18n_label: disabled
+    class: btn-success

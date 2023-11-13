@@ -1,0 +1,52 @@
+client_tabs:
+    icloud:
+        view: icloud_tab
+        i18n: icloud.icloud
+        badge: icloud-cnt
+listings:
+    icloud:
+        view: icloud_listing
+        i18n: icloud.icloud
+widgets:
+    icloud_bookmarks:
+        view: icloud_bookmarks_widget
+    icloud_calendar:
+        view: icloud_calendar_widget
+    icloud_cloud_photo:
+        view: icloud_cloud_photo_widget
+    icloud_clouddesktop_desktop:
+        view: icloud_clouddesktop_desktop_widget
+    icloud_clouddesktop_documents:
+        view: icloud_clouddesktop_documents_widget
+    icloud_clouddesktop_drive:
+        view: icloud_clouddesktop_drive_widget
+    icloud_contacts:
+        view: icloud_contacts_widget
+    icloud_find_my_mac:
+        view: icloud_find_my_mac_widget
+    icloud_home:
+        view: icloud_home_widget
+    icloud_imessage_syncing:
+        view: icloud_imessage_syncing_widget
+    icloud_keychain_sync:
+        view: icloud_keychain_sync_widget
+    icloud_logged_in:
+        view: icloud_logged_in_widget
+    icloud_mail:
+        view: icloud_mail_widget
+    icloud_news:
+        view: icloud_news_widget
+    icloud_notes:
+        view: icloud_notes_widget
+    icloud_reminders:
+        view: icloud_reminders_widget
+    icloud_siri:
+        view: icloud_siri_widget
+    icloud_shared_streams:
+        view: icloud_shared_streams_widget
+    icloud_stocks:
+        view: icloud_stocks_widget
+reports:
+    icloud_report:
+        view: icloud_report
+        i18n: icloud.report

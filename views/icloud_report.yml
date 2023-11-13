@@ -1,0 +1,26 @@
+row1:
+  icloud_logged_in:
+  icloud_find_my_mac:
+row2:
+  icloud_clouddesktop_desktop:
+  icloud_clouddesktop_documents:
+  icloud_clouddesktop_drive:
+row3:
+  icloud_mail:
+  icloud_contacts:
+  icloud_calendar:
+row4:
+  icloud_cloud_photo:
+  icloud_shared_streams:
+row5:
+  icloud_imessage_syncing:
+  icloud_keychain_sync:
+  icloud_siri:
+row6:
+  icloud_bookmarks:
+  icloud_notes:
+  icloud_reminders:
+row7:
+  icloud_home:
+  icloud_news:
+  icloud_stocks:

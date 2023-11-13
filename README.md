@@ -11,8 +11,6 @@ Table Schema
 * account_dsid - INT(11) - Account ID number
 * account_id - VARCHAR(255) - Account username
 * account_uuid - VARCHAR(255) - Account UUID
-* back_to_my_mac_enabled - BOOLEAN - Back to My Mac enabled (deprecated)
-* back_to_my_mac_relay_port - INT(11) - Port used by Back to My Mac for relaying data (deprecated)
 * beta - BOOLEAN - iCloud Beta
 * bookmarks_enabled - BOOLEAN - Bookmarks enabled
 * calendar_enabled - BOOLEAN - Calendar enabled
@@ -37,7 +35,6 @@ Table Schema
 * mail_and_notes_username - VARCHAR(255) -  iCloud Mail username
 * mobile_documents_enabled - BOOLEAN - Mobile Documents/iCloud Drive enabled
 * notes_enabled - BOOLEAN - Notes enabled
-* photo_stream_enabled - BOOLEAN - Photo Stream enabled
 * prefpath - VARCHAR(255) - User's home folder name/location
 * primary_email_verified - BOOLEAN - Primary email address verified
 * reminders_enabled - BOOLEAN - Reminders enabled

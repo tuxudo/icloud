@@ -1,0 +1,13 @@
+type: button
+widget_id: icloud_logged_in-widget
+api_url: /module/icloud/get_button_widget/logged_in
+i18n_title: icloud.logged_in_widget
+icon: fa-sign-in
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: yes
+    class: btn-danger 
+  - label: no
+    i18n_label: no
+    class: btn-success
