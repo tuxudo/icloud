@@ -246,7 +246,7 @@ new Icloud_model;
                 (status == 0 && status != '' ? '<span class="label label-success">'+i18n.t('no')+'</span>' : '')
                 $('td:eq(26)', nRow).html(status)
             }
-        };
+        });
 
         // Use hash as searchquery
         if(window.location.hash.substring(1)){
