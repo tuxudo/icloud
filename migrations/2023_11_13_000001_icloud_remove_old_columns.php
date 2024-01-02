@@ -12,10 +12,15 @@ class IcloudRemoveOldColumns extends Migration
     {
         $capsule = new Capsule();
         
+        // These have to be split out because of SQLite limtations
         $capsule::schema()->table($this->tableName, function (Blueprint $table) {
             // These services are no longer supported by Apple
             $table->dropColumn('back_to_my_mac_enabled');
+        });
+        $capsule::schema()->table($this->tableName, function (Blueprint $table) {
             $table->dropColumn('back_to_my_mac_relay_port');
+        });
+        $capsule::schema()->table($this->tableName, function (Blueprint $table) {
             $table->dropColumn('photo_stream_enabled');
         });
     }
