@@ -1,0 +1,37 @@
+i18n_title: icloud.report
+js_link: module/icloud/js/icloud
+not_null_column: icloud.account_id
+table:
+  - column: machine.computer_name
+    i18n_header: listing.computername
+    formatter: clientDetail
+    tab_link: icloud-tab
+  - column: reportdata.serial_number
+    i18n_header: serial
+  - {i18n_header: icloud.account_id, column: icloud.account_id}
+  - {i18n_header: icloud.display_name, column: icloud.display_name}
+  - {i18n_header: icloud.logged_in, column: icloud.logged_in, formatter: icloud_yes_no}
+  - {i18n_header: icloud.clouddesktop_desktop_enabled, column: icloud.clouddesktop_desktop_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.clouddesktop_documents_enabled, column: icloud.clouddesktop_documents_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.clouddesktop_drive_enabled, column: icloud.clouddesktop_drive_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.mobile_documents_enabled, column: icloud.mobile_documents_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.cloud_photo_enabled, column: icloud.cloud_photo_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.shared_streams_enabled, column: icloud.shared_streams_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.mail_and_notes_enabled, column: icloud.mail_and_notes_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.contacts_enabled, column: icloud.contacts_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.calendar_enabled, column: icloud.calendar_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.reminders_enabled, column: icloud.reminders_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.bookmarks_enabled, column: icloud.bookmarks_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.notes_enabled, column: icloud.notes_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.siri_enabled, column: icloud.siri_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.imessage_syncing_enabled, column: icloud.imessage_syncing_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.keychain_sync_enabled, column: icloud.keychain_sync_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.find_my_mac_enabled, column: icloud.find_my_mac_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.home_enabled, column: icloud.home_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.stocks_enabled, column: icloud.stocks_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.news_enabled, column: icloud.news_enabled, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.beta, column: icloud.beta, formatter: icloud_enabled_disabled}
+  - {i18n_header: icloud.is_managed_apple_id, column: icloud.is_managed_apple_id, formatter: icloud_yes_no}
+  - {i18n_header: icloud.primary_email_verified, column: icloud.primary_email_verified, formatter: icloud_yes_no}
+  - {i18n_header: icloud.account_dsid, column: icloud.account_dsid}
+  - {i18n_header: icloud.prefpath, column: icloud.prefpath}

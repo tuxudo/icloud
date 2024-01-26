@@ -6,7 +6,7 @@ class Icloud_model extends \Model
 {
     public function __construct($serial = '')
     {
-        parent::__construct('id', 'icloud'); //primary key, tablename
+        parent::__construct('id', 'icloud'); // Primary key, tablename
         $this->rs['id'] = '';
         $this->rs['serial_number'] = $serial;
         $this->rs['account_alternate_dsid'] = '';
@@ -66,8 +66,8 @@ class Icloud_model extends \Model
         // If data is empty, echo out error
         if (! $data) {
             echo ("Error Processing icloud module: No data found");
-        } else { 
-            
+        } else {
+
             // Delete previous entries
             $this->deleteWhere('serial_number=?', $this->serial_number);
 
