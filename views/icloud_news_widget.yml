@@ -1,13 +1,16 @@
 type: button
 widget_id: icloud_news-widget
 api_url: /module/icloud/get_button_widget/news_enabled
-i18n_title: icloud.news_widtet
+i18n_title: icloud.news_widget
+i18n_tooltip: "Shows iCloud News sync status across all clients. Red indicates News sync is enabled, green indicates it is disabled."
 icon: fa-newspaper-o
 listing_link: /show/listing/icloud/icloud
 buttons:
   - label: yes
     i18n_label: enabled
-    class: btn-danger 
+    class: btn-danger
+    search_component: news_yes
   - label: no
     i18n_label: disabled
     class: btn-success
+    search_component: news_no

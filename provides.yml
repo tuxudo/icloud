@@ -46,6 +46,8 @@ widgets:
         view: icloud_shared_streams_widget
     icloud_stocks:
         view: icloud_stocks_widget
+    icloud_private_relay:
+        view: icloud_private_relay_widget
 reports:
     icloud_report:
         view: icloud_report

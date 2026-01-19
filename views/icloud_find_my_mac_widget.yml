@@ -2,12 +2,15 @@ type: button
 widget_id: icloud_find_my_mac-widget
 api_url: /module/icloud/get_button_widget/find_my_mac_enabled
 i18n_title: icloud.find_my_mac_icloud
+i18n_tooltip: "Shows Find My Mac status across all clients. Red indicates Find My Mac is enabled, green indicates it is disabled."
 icon: fa-map-marker
 listing_link: /show/listing/icloud/icloud
 buttons:
   - label: yes
     i18n_label: enabled
-    class: btn-danger 
+    class: btn-danger
+    search_component: find_my_mac_yes
   - label: no
     i18n_label: disabled
     class: btn-success
+    search_component: find_my_mac_no
