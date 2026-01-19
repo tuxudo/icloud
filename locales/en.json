@@ -41,7 +41,7 @@
     "mail_and_notes_username": "Mail Username",
     "mobile_documents_enabled": "Mobile Documents",
     "news_enabled": "News",
-    "news_widtet": "iCloud News",
+    "news_widget": "iCloud News",
     "notes_enabled": "Notes",
     "notes_widget": "iCloud Notes",
     "photo_stream_enabled": "Photo Stream",
@@ -54,5 +54,7 @@
     "siri_enabled": "Siri",
     "siri_widget": "iCloud Siri",
     "stocks_enabled": "Stocks",         
-    "stocks_widget": "iCloud Stocks"          
+    "stocks_widget": "iCloud Stocks",
+    "private_relay_enabled": "Private Relay",
+    "private_relay_widget": "iCloud Private Relay"
 }

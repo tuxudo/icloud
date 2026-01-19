@@ -2,12 +2,15 @@ type: button
 widget_id: icloud_imessage_syncing-widget
 api_url: /module/icloud/get_button_widget/imessage_syncing_enabled
 i18n_title: icloud.imessage_syncing_enabled
+i18n_tooltip: "Shows iMessage sync status across all clients. Red indicates iMessage sync is enabled, green indicates it is disabled."
 icon: fa-commenting-o
 listing_link: /show/listing/icloud/icloud
 buttons:
   - label: yes
     i18n_label: enabled
-    class: btn-danger 
+    class: btn-danger
+    search_component: imessage_syncing_yes
   - label: no
     i18n_label: disabled
     class: btn-success
+    search_component: imessage_syncing_no

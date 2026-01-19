@@ -1,0 +1,16 @@
+type: button
+widget_id: icloud_private_relay-widget
+api_url: /module/icloud/get_button_widget/private_relay_enabled
+i18n_title: icloud.private_relay_widget
+i18n_tooltip: "Shows iCloud Private Relay status across all clients. Green indicates Private Relay is enabled, red indicates it is disabled."
+icon: fa-shield
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: enabled
+    class: btn-danger
+    search_component: private_relay_yes
+  - label: no
+    i18n_label: disabled
+    class: btn-success
+    search_component: private_relay_no

@@ -46,3 +46,4 @@ Table Schema
 * home_enabled - BOOLEAN - If Homes are in iCloud
 * news_enabled - BOOLEAN - If News is synced with iCloud
 * stocks_enabled - BOOLEAN - Stocks stored in iCloud
+* private_relay_enabled - BOOLEAN - iCloud Private Relay enabled (macOS 12+)

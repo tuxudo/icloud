@@ -2,12 +2,15 @@ type: button
 widget_id: icloud_clouddesktop_documents-widget
 api_url: /module/icloud/get_button_widget/clouddesktop_documents_enabled
 i18n_title: icloud.clouddesktop_documents_enabled
+i18n_tooltip: "Shows iCloud Documents sync status across all clients. Red indicates Documents sync is enabled, green indicates it is disabled."
 icon: fa-file-o
 listing_link: /show/listing/icloud/icloud
 buttons:
   - label: yes
     i18n_label: enabled
-    class: btn-danger 
+    class: btn-danger
+    search_component: clouddesktop_documents_yes
   - label: no
     i18n_label: disabled
     class: btn-success
+    search_component: clouddesktop_documents_no
