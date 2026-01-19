@@ -2,7 +2,7 @@ type: button
 widget_id: notes_widget-widget
 api_url: /module/icloud/get_button_widget/notes_enabled
 i18n_title: icloud.notes_widget
-i18n_tooltip: "Shows iCloud Notes sync status across all clients. Red indicates Notes sync is enabled, green indicates it is disabled."
+i18n_tooltip: "Shows iCloud Notes sync status across all clients."
 icon: fa-sticky-note-o
 listing_link: /show/listing/icloud/icloud
 buttons:

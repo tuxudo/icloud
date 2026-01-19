@@ -2,7 +2,7 @@ type: button
 widget_id: icloud_shared_streams-widget
 api_url: /module/icloud/get_button_widget/shared_streams_enabled
 i18n_title: icloud.shared_streams_enabled
-i18n_tooltip: "Shows iCloud Shared Streams sync status across all clients. Red indicates Shared Streams sync is enabled, green indicates it is disabled."
+i18n_tooltip: "Shows iCloud Shared Streams sync status across all clients."
 icon: fa-share-square
 listing_link: /show/listing/icloud/icloud
 buttons:

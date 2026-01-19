@@ -2,7 +2,7 @@ type: button
 widget_id: icloud_stocks-widget
 api_url: /module/icloud/get_button_widget/stocks_enabled
 i18n_title: icloud.stocks_widget
-i18n_tooltip: "Shows iCloud Stocks sync status across all clients. Red indicates Stocks sync is enabled, green indicates it is disabled."
+i18n_tooltip: "Shows iCloud Stocks sync status across all clients."
 icon: fa-line-chart
 listing_link: /show/listing/icloud/icloud
 buttons:

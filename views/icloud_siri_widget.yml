@@ -2,7 +2,7 @@ type: button
 widget_id: icloud_siri-widget
 api_url: /module/icloud/get_button_widget/siri_enabled
 i18n_title: icloud.siri_widget
-i18n_tooltip: "Shows iCloud Siri sync status across all clients. Red indicates Siri sync is enabled, green indicates it is disabled."
+i18n_tooltip: "Shows iCloud Siri sync status across all clients."
 icon: fa-microphone
 listing_link: /show/listing/icloud/icloud
 buttons:

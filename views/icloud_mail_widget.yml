@@ -2,7 +2,7 @@ type: button
 widget_id: icloud_mail-widget
 api_url: /module/icloud/get_button_widget/mail_and_notes_enabled
 i18n_title: icloud.mail_widget
-i18n_tooltip: "Shows iCloud Mail sync status across all clients. Red indicates Mail sync is enabled, green indicates it is disabled."
+i18n_tooltip: "Shows iCloud Mail sync status across all clients."
 icon: fa-envelope-o
 listing_link: /show/listing/icloud/icloud
 buttons:

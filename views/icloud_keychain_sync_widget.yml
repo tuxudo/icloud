@@ -2,7 +2,7 @@ type: button
 widget_id: icloud_keychain_sync-widget
 api_url: /module/icloud/get_button_widget/keychain_sync_enabled
 i18n_title: icloud.keychain_sync_widget
-i18n_tooltip: "Shows iCloud Keychain sync status across all clients. Red indicates Keychain sync is enabled, green indicates it is disabled."
+i18n_tooltip: "Shows iCloud Keychain sync status across all clients."
 icon: fa-key
 listing_link: /show/listing/icloud/icloud
 buttons:

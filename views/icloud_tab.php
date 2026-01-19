@@ -1,14 +1,4 @@
-<div id="lister" style="font-size: large; float: right;">
-    <a href="/show/listing/icloud/icloud" title="List">
-        <i class="btn btn-default tab-btn fa fa-list-alt"></i>
-    </a>
-</div>
-<div id="report_btn" style="font-size: large; float: right;">
-    <a href="/show/report/icloud/icloud_report" title="Report">
-        <i class="btn btn-default tab-btn fa fa-bar-chart-o"></i>
-    </a>
-</div>
-<h2><i class="fa fa-cloud"></i> <span data-i18n="icloud.icloud"></span></h2>
+<h2 data-i18n="icloud.icloud"></h2>
 <div id="icloud-tab"></div>
 <div id="icloud-msg" data-i18n="listing.loading" class="col-lg-12 text-center"></div>
 
