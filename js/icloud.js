@@ -325,3 +325,48 @@ var private_relay_filter = function(colNumber, d) {
         d.search.value = '';
     }
 }
+
+/**
+ * Wallet filter
+ */
+var wallet_filter = function(colNumber, d) {
+    if (d.search.value.match(/^wallet_yes$/)) {
+        d.columns[colNumber].search.value = '= 1';
+        d.search.value = '';
+    }
+    
+    if (d.search.value.match(/^wallet_no$/)) {
+        d.columns[colNumber].search.value = '= 0';
+        d.search.value = '';
+    }
+}
+
+/**
+ * Phonefacetime filter
+ */
+var phonefacetime_filter = function(colNumber, d) {
+    if (d.search.value.match(/^phonefacetime_yes$/)) {
+        d.columns[colNumber].search.value = '= 1';
+        d.search.value = '';
+    }
+    
+    if (d.search.value.match(/^phonefacetime_no$/)) {
+        d.columns[colNumber].search.value = '= 0';
+        d.search.value = '';
+    }
+}
+
+/**
+ * Freeform filter
+ */
+var freeform_filter = function(colNumber, d) {
+    if (d.search.value.match(/^freeform_yes$/)) {
+        d.columns[colNumber].search.value = '= 1';
+        d.search.value = '';
+    }
+    
+    if (d.search.value.match(/^freeform_no$/)) {
+        d.columns[colNumber].search.value = '= 0';
+        d.search.value = '';
+    }
+}

@@ -1,0 +1,16 @@
+type: button
+widget_id: icloud_phonefacetime-widget
+api_url: /module/icloud/get_button_widget/phonefacetime_enabled
+i18n_title: icloud.phonefacetime_widget
+i18n_tooltip: "Shows iCloud Facetime/phone sync status across all clients."
+icon: fa-phone-square
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: enabled
+    class: btn-danger
+    search_component: phonefacetime_yes
+  - label: no
+    i18n_label: disabled
+    class: btn-success
+    search_component: phonefacetime_no

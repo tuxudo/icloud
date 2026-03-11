@@ -30,6 +30,9 @@ table:
   - {i18n_header: icloud.home_enabled, column: icloud.home_enabled, formatter: icloud_enabled_disabled, filter: home_filter}
   - {i18n_header: icloud.stocks_enabled, column: icloud.stocks_enabled, formatter: icloud_enabled_disabled, filter: stocks_enabled_filter}
   - {i18n_header: icloud.news_enabled, column: icloud.news_enabled, formatter: icloud_enabled_disabled, filter: news_filter}
+  - {i18n_header: icloud.freeform_enabled, column: icloud.freeform_enabled, formatter: icloud_enabled_disabled, filter: freeform_filter}
+  - {i18n_header: icloud.phonefacetime_enabled, column: icloud.phonefacetime_enabled, formatter: icloud_enabled_disabled, filter: phonefacetime_filter}
+  - {i18n_header: icloud.wallet_enabled, column: icloud.wallet_enabled, formatter: icloud_enabled_disabled, filter: wallet_filter}
   - {i18n_header: icloud.private_relay_enabled, column: icloud.private_relay_enabled, formatter: icloud_enabled_disabled, filter: private_relay_filter}
   - {i18n_header: icloud.beta, column: icloud.beta, formatter: icloud_enabled_disabled}
   - {i18n_header: icloud.is_managed_apple_id, column: icloud.is_managed_apple_id, formatter: icloud_yes_no}

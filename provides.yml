@@ -48,6 +48,12 @@ widgets:
         view: icloud_stocks_widget
     icloud_private_relay:
         view: icloud_private_relay_widget
+    icloud_phonefacetime:
+        view: icloud_phonefacetime_widget
+    icloud_wallet:
+        view: icloud_wallet_widget
+    icloud_freeform:
+        view: icloud_freeform_widget
 reports:
     icloud_report:
         view: icloud_report

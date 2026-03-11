@@ -47,3 +47,6 @@ Table Schema
 * news_enabled - BOOLEAN - If News is synced with iCloud
 * stocks_enabled - BOOLEAN - Stocks stored in iCloud
 * private_relay_enabled - BOOLEAN - iCloud Private Relay enabled (macOS 12+)
+* wallet_enabled - BOOLEAN - iCloud Wallet sync enabled
+* phonefacetime_enabled - BOOLEAN - iCloud Facetime/phone sync enabled
+* freeform_enabled - BOOLEAN - iCloud Freeform sync enabled

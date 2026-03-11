@@ -1,6 +1,7 @@
 row1:
   icloud_logged_in:
   icloud_find_my_mac:
+  icloud_private_relay:
 row2:
   icloud_clouddesktop_desktop:
   icloud_clouddesktop_documents:
@@ -25,4 +26,7 @@ row7:
   icloud_news:
   icloud_stocks:
 row8:
-  icloud_private_relay:
+  icloud_freeform:
+  icloud_phonefacetime:
+  icloud_wallet:
+  

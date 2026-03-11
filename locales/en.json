@@ -56,5 +56,10 @@
     "stocks_enabled": "Stocks",         
     "stocks_widget": "iCloud Stocks",
     "private_relay_enabled": "Private Relay",
-    "private_relay_widget": "iCloud Private Relay"
+    "wallet_enabled": "Wallet",
+    "wallet_widget": "iCloud Wallet",
+    "phonefacetime_enabled": "FaceTime/Phone",
+    "phonefacetime_widget": "iCloud FaceTime/Phone",
+    "freeform_enabled": "Freeform",
+    "freeform_widget": "iCloud Freeform"
 }

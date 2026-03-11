@@ -41,7 +41,7 @@ $(document).on('appReady', function(){
                         } else if((prop == "beta" || prop == "cloud_photo_only_keep_thumbnail" || prop == "clouddesktop_declined_upgrade" || prop == "clouddesktop_first_sync_down_complete" || prop == "family_show_manage_family" || prop == "is_managed_apple_id" || prop == "logged_in" || prop == "notes_dot_mac_mail_supported" || prop == "mail_and_notes_dot_mac_mail_supported" || prop == "primary_email_verified" || prop == "should_configure" || prop == "imessage_currently_syncing" || prop.indexOf('_beta') > -1) && d[prop] == 1){
                             rows = rows + '<tr><th>'+i18n.t('icloud.'+prop)+'</th><td>'+i18n.t('yes')+'</td></tr>';
 
-                        // Else, build out rows from devices
+                        // Else, build out rows from entries
                         } else {
                             rows = rows + '<tr><th>'+i18n.t('icloud.'+prop)+'</th><td>'+d[prop]+'</td></tr>';
                         }

@@ -53,7 +53,7 @@ def process_prefs(prefs):
     for pref in prefs.split('\n'):
         pl = FoundationPlist.readPlist(pref)
         for account in pl["Accounts"]:
-            preffile = {'account_id':'', 'logged_in': '0'}
+            preffile = {'account_id':'', 'logged_in': '1'}
             for item in account:
                 preffile['prefpath'] = pref.replace("/Library/Preferences/MobileMeAccounts.plist", "").replace("/Users/", "")
                 if item == 'AccountAlternateDSID':

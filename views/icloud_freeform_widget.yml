@@ -1,0 +1,16 @@
+type: button
+widget_id: icloud_freeform-widget
+api_url: /module/icloud/get_button_widget/freeform_enabled
+i18n_title: icloud.freeform_widget
+i18n_tooltip: "Shows iCloud Freeform sync status across all clients."
+icon: fa-pencil-square
+listing_link: /show/listing/icloud/icloud
+buttons:
+  - label: yes
+    i18n_label: enabled
+    class: btn-danger
+    search_component: freeform_yes
+  - label: no
+    i18n_label: disabled
+    class: btn-success
+    search_component: freeform_no
